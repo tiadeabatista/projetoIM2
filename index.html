@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">   <!-- linguagem em que a pegina vai receber neste caso portugues do Brasil-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--informações passadas ao navegador-->
+    <link rel="stylesheet" href="./assest/script.css">
+    <link href="https://fonts.googleapis.com/css2?family=Stick&display=swap">
+    <link href="https: //fonts.googleapis.com/css2?family= DotGothic16 & display = swap" >
+
+    <title>Cifra de Cesar--Base64</title>
+</head>
+<body>
+    <main>
+       <div id="corpo">       
+         <form>      
+           <h1>encode--decode</h1>
+           <h2>Digite sua mensagem no campo abaixo e escolha <br>a base a ser executada, escolha também<br> codificar ou decodificar sua mensagem</h2>
+             <div id="testar" >
+                <textarea cols="30" rows="5" class="input-padrao" id="mensagem" placeholder="digite sua mensagem" ></textarea>
+              </div> 
+
+               <div class="escolhaButton">
+                  <select name="select" class="select" id="select">
+                    <option value="base64">Base64</option>
+                    <option value="cifra">Cifra de césar</option> 
+                  </select>               
+          
+                <div class="escolhaChave">
+                <label class="chave" for="range">Escolha a Chave</label>                                 
+                <input type="number" value="1" id="rangenumber" min="1" max="26" oninput="range.value=value" />            
+                </div>
+               </div>        
+
+              <div class="radio-button">
+             <div class="radio">
+                <input type="radio" name="codificar" id="codificar" value="codificar" checked />
+                <label for="codificar">Codificar</label>
+                
+            </div>
+
+            <div class="radio">
+                <input type="radio" name="codificar" id="decodificar" value="decodificar" />
+                <label for="decodificar">Decodificar</label>
+            </div>
+        </div>
+        
+        <div id="testar" >
+        <textarea id="resultado" class="mensagem resultado"  cols="30" rows="5" readonly
+        placeholder="Mensagem Criptografada"></textarea>
+      </div>
+        <div class="btn">
+        <button class="configbutton" >Codificar Mensagem!</button>
+
+        </div>    
+    </form>
+
+  </div>
+    </main>
+
+    <script src="./assest/script.js" ></script>
+</body>
+</html>

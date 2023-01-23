@@ -1,0 +1,59 @@
+ /*fontes do google*/
+
+@import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Stick&display=swap');
+
+
+html, body{
+    margin: 0;         /* configuração de largura de toda a pagina */
+    padding: 0;
+    
+}
+
+body{
+    background: rgb(4, 84, 4);  /* cor da pagina toda*/
+}
+
+form{
+    display: flex;
+    align-items: center;       /*configuração das caixas de textos alinhadas ao centro em colunas */
+    flex-direction: column;  
+    
+}
+
+h1,h2{
+    text-align: center;    /* titulos alinhados ao centro com estilo de fonte */
+    font-family: 'DotGothic16', sans-serif;;
+}
+
+textarea{
+    box-sizing: border-box;
+    border: 2px solid black;      /* configuração da caixa de texto sem efeito de linha e recebendo estilo de fonte*/
+    outline: none;
+    font-family: 'Stick', sans-serif;
+
+}
+
+.escolhaButton{
+    box-sizing: border-box;  /* caixa do botão com largura */
+    border: 2px solid black;
+    width: 18%;
+    
+}
+
+.configbutton{    
+    box-sizing: border-box;
+    border: 2px solid black;     /* configuração do botão caixa, estilo de fonte, estilazado dizendo ser clickavel*/
+    cursor: pointer;
+    background: rgb(78, 105, 78);    
+    font-family: 'Stick', sans-serif;
+    
+}
+.configbutton:hover{
+
+ transform: scale(1.2);    /* configuração de apontar para o botão, tranformando de tamanho em escala 1.2*/
+
+
+}
+
+
